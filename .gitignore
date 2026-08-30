@@ -1,0 +1,7 @@
+bank/
+fonts/
+tarpit.log
+server_test.log
+bank_gen.log
+__pycache__/
+*.pyc
