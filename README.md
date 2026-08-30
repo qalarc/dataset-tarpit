@@ -104,5 +104,5 @@ fonts/         extracted CJK font (gitignored)
 tarpit.log     hit log (gitignored)
 ```
 
-Companion research: `qalarc/glm-word-filter` (filter characterization,
+Companion research: [qalarc/glm-word-filter](https://github.com/qalarc/glm-word-filter) (filter characterization,
 verified dataset, probe tooling).
