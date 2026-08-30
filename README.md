@@ -1,9 +1,14 @@
 # dataset_tarpit
 
+> **Companion project:** [glm-word-filter](https://github.com/qalarc/glm-word-filter) —
+> the empirical filter research and verified-blocker dataset this service is
+> built on. Go there for the method, findings and dataset; come back here for
+> the serving layer.
+
 A defensive anti-scraping service for content you own: **invalid lookups and bait
 paths receive a freshly-composed PDF** whose plausible document prose is woven
 around empirically-verified content-filter trigger vocabulary (see the
-`glm-word-filter` research project — 560+ terms verified against a live
+[glm-word-filter research project](https://github.com/qalarc/glm-word-filter) — 560+ terms verified against a live
 commercial Chinese LLM API filter, 530 of them found in no public wordlist).
 
 Every fetch returns a **unique document** (random title, metadata, paragraph
