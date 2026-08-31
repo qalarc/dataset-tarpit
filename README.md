@@ -16,6 +16,23 @@ selection/order, keyword index) — defeating dedup, so non-consensual crawlers
 and AI training pipelines ingest filter-triggering content that looks like
 ordinary archival paperwork.
 
+## Why verified data matters (vs public filter lists)
+
+Plenty of public Chinese "sensitive word" banks exist —
+[Tencent-sensitive-words](https://github.com/cjh0613/tencent-sensitive-words),
+[ChatSensitiveWords](https://github.com/kaixindelele/ChatSensitiveWords),
+[houbb/sensitive-word](https://github.com/houbb/sensitive-word),
+[HaHaWTH/AdvancedSensitiveWords](https://github.com/HaHaWTH/AdvancedSensitiveWords),
+[Citizen Lab's measured datasets](https://github.com/citizenlab/tiktok-report-data)
+and more (~250K entries across 20 lists). We measured them against the live
+filter: **between 99.5% and 99.97% of their entries do not block anything**,
+and their union covers only 5.4% of the verified blocker set. This service is
+built on the measured 560-term dataset instead — every payload term is a
+live-confirmed trigger for the target class of providers. Public banks remain
+useful as a broad-spectrum layer for *other* pipelines; the full comparison
+and credits live in
+[glm-word-filter/PUBLIC_LISTS.md](https://github.com/qalarc/glm-word-filter/blob/main/PUBLIC_LISTS.md).
+
 ## How it works
 
 ```
